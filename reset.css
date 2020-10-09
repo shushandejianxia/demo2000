@@ -1,0 +1,43 @@
+@charset "utf-8";
+body,h1,h2,h3,h4,h5,h6,ol,ul,dl,li,dt,dd,p,form,input,textarea,select,tr,td,th,fieldset,legend{
+	margin:0;
+	padding:0;
+}
+body{
+	font-size:16px;
+}
+ul,ol{
+	list-style:none;
+}
+a,u{
+	text-decoration: none;
+}
+b,strong{
+	font-weight:normal;
+}
+i,em{
+	font-style:normal;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight:normal;
+	font-size:16px;
+}
+img{
+	border:0;
+	vertical-align: middle;
+}
+input,textarea,fieldset{
+	border:none;
+	outline:none;
+}
+.clearfn:after{
+	content:"";
+	clear:both;
+	display: block;
+	height:0;
+	overflow: hidden;
+	visibility: hidden;
+}
+.clearfn{
+	zoom:1;
+}

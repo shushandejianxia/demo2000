@@ -1,0 +1,25 @@
+{
+    "banner": [{
+            "img": "1.jpg",
+            "url": "https://www.meizu.com"
+        },
+
+        {
+            "img": "2.jpg",
+            "url": "https://www.meizu.com"
+        },
+
+        {
+            "img": "3.jpg",
+            "url": "https://www.meizu.com"
+        },
+        {
+            "img": "4.jpg",
+            "url": "https://www.meizu.com"
+        },
+        {
+            "img": "1.jpg",
+            "url": "https://www.meizu.com"
+        }
+    ]
+}

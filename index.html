@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="./css/index.css" />
+<script src='./js/require.js' defer async='true' data-main='./js/main.js'></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .seven {
+            width: 95%;
+            /* height: 1000px; */
+            /* height: 1000px; */
+            margin: 0 auto;
+            background-color: #F4F4F4;
+        }
+        
+        .asideul {
+            justify-content: space-around;
+            width: 94.9%;
+            height: 670px;
+            margin: 0 auto;
+            /* background-color: #F4F4F4; */
+        }
+        
+        .asideul li {
+            float: left;
+            width: 284px;
+            height: 300px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+        
+        .asideul .font {
+            overflow: hidden;
+            /* padding-left: 100px; */
+            text-align: center;
+        }
+        
+        .side h2 {
+            padding-left: 30px;
+        }
+        
+        ul,
+        ol {
+            list-style: none;
+        }
+        
+        a,
+        u {
+            text-decoration: none;
+        }
+    </style>
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src='./js/require.js' defer async='true' data-main='./js/main.js'></script>
+</head>
+
+<body>
+    <div id="meizuguanwang">
+        <div id="header-link">
+            <div id="header-link-logo">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAAAuCAYAAAABQwQEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQwIDc5LjE2MDQ1MSwgMjAxNy8wNS8wNi0wMTowODoyMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTggKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6Q0FCMzYyNjc5MTE4MTFFQTkyOTE5MDU4QTAwMjNCOTEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6Q0FCMzYyNjg5MTE4MTFFQTkyOTE5MDU4QTAwMjNCOTEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoxRDVBNDg5NDkxMEIxMUVBOTI5MTkwNThBMDAyM0I5MSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDQUIzNjI2NjkxMTgxMUVBOTI5MTkwNThBMDAyM0I5MSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pg9i2hkAAAX9SURBVHja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"
+                    alt="">
+            </div>
+            <ul id="header-link-nav">
+                <a href="#">
+                    <li id="one"> 手机</li>
+
+                </a>
+                <a href="#">
+                    <li id="two"> 声学</li>
+                </a>
+                <a href="#">
+                    <li id="three"> 配件</li>
+                </a>
+                <a href="#">
+                    <li id="four"> 生活</li>
+                </a>
+                <a href="#">
+                    <li> Flyme</li>
+                </a>
+                <a href="#">
+                    <li> 服务</li>
+                </a>
+                <a href="#">
+                    <li> 专卖店</li>
+                </a>
+                <a href="#">
+                    <li> 社区</li>
+                </a>
+                <a href="#">
+                    <li> 企业服务</li>
+                </a>
+                <a href="#">
+                    <li>APP下载</li>
+                </a>
+            </ul>
+
+            <div class="goodsList">
+                <ul>
+                    <li><img src="https://openfile.meizu.com/group1/M00/07/D9/Cgbj0V6zwMWANhNKAAVfQwmOan4751.png120x120.jpg" alt="">
+                        <p>魅族 17「AG梦幻独角兽」</p>
+                        <span>3799</span>
+                    </li>
+                    <li><img src="https://openfile.meizu.com/group1/M00/07/D9/Cgbj0V6zwMWANhNKAAVfQwmOan4751.png120x120.jpg" alt="">
+                        <p>魅族 17「AG梦幻独角兽」</p>
+                        <span>3799</span>
+                    </li>
+                    <li><img src="https://openfile.meizu.com/group1/M00/07/D9/Cgbj0V6zwMWANhNKAAVfQwmOan4751.png120x120.jpg" alt="">
+                        <p>魅族 17「AG梦幻独角兽」</p>
+                        <span>3799</span>
+                    </li>
+
+                    <li><img src="https://openfile.meizu.com/group1/M00/07/D9/Cgbj0V6zwMWANhNKAAVfQwmOan4751.png120x120.jpg" alt="">
+                        <p>魅族 17「AG梦幻独角兽」</p>
+                        <span>3799</span>
+                    </li>
+                    <li><img src="https://openfile.meizu.com/group1/M00/07/D9/Cgbj0V6zwMWANhNKAAVfQwmOan4751.png120x120.jpg" alt="">
+                        <p>魅族 17「AG梦幻独角兽」</p>
+                        <span>3799</span>
+                    </li>
+                    <li><img src="https://openfile.meizu.com/group1/M00/07/D9/Cgbj0V6zwMWANhNKAAVfQwmOan4751.png120x120.jpg" alt="">
+                        <p>魅族 17「AG梦幻独角兽」</p>
+                        <span>3799</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="goodsList2">
+                <ul>
+                    <li><img src="https://openfile.meizu.com/group1/M00/07/86/Cgbj0V3UocyAR_tJAApbDmCAyEo620.png120x120.jpg" alt="">
+                        <p>魅族 HD60 头戴式蓝牙耳机</p>
+                        <span>499</span>
+                    </li>
+
+                    <li><img src="https://openfile.meizu.com/group1/M00/07/86/Cgbj0V3UocyAR_tJAApbDmCAyEo620.png120x120.jpg" alt="">
+                        <p>魅族 HD60 头戴式蓝牙耳机</p>
+                        <span>499</span>
+                    </li>
+                    <li><img src="https://openfile.meizu.com/group1/M00/07/86/Cgbj0V3UocyAR_tJAApbDmCAyEo620.png120x120.jpg" alt="">
+                        <p>魅族 HD60 头戴式蓝牙耳机</p>
+                        <span>499</span>
+                    </li>
+                    <li><img src="https://openfile.meizu.com/group1/M00/07/86/Cgbj0V3UocyAR_tJAApbDmCAyEo620.png120x120.jpg" alt="">
+                        <p>魅族 HD60 头戴式蓝牙耳机</p>
+                        <span>499</span>
+                    </li>
+                    <li><img src="https://openfile.meizu.com/group1/M00/07/86/Cgbj0V3UocyAR_tJAApbDmCAyEo620.png120x120.jpg" alt="">
+                        <p>魅族 HD60 头戴式蓝牙耳机</p>
+                        <span>499</span>
+                    </li>
+                    <li><img src="https://openfile.meizu.com/group1/M00/07/86/Cgbj0V3UocyAR_tJAApbDmCAyEo620.png120x120.jpg" alt="">
+                        <p>魅族 HD60 头戴式蓝牙耳机</p>
+                        <span>499</span>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="goodsList3">
+                <ul>
+                    <li><img src="https://openfile.meizu.com/group1/M00/07/CA/Cgbj0F6z76aADIfNAAS8Gxwx2NE353.png120x120.jpg" alt="">
+                        <p>魅族无线充电板</p>
+                        <span>169</span>
+                    </li>、
+
+                    <li><img src="https://openfile.meizu.com/group1/M00/07/CA/Cgbj0F6z76aADIfNAAS8Gxwx2NE353.png120x120.jpg" alt="">
+                        <p>魅族无线充电板</p>
+                        <span>169</span>
+                    </li>
+                    <li><img src="https://openfile.meizu.com/group1/M00/07/CA/Cgbj0F6z76aADIfNAAS8Gxwx2NE353.png120x120.jpg" alt="">
+                        <p>魅族无线充电板</p>
+                        <span>169</span>
+                    </li>
+                    <li><img src="https://openfile.meizu.com/group1/M00/07/CA/Cgbj0F6z76aADIfNAAS8Gxwx2NE353.png120x120.jpg" alt="">
+                        <p>魅族无线充电板</p>
+                        <span>169</span>
+                    </li>
+                    <li><img src="https://openfile.meizu.com/group1/M00/07/CA/Cgbj0F6z76aADIfNAAS8Gxwx2NE353.png120x120.jpg" alt="">
+                        <p>魅族无线充电板</p>
+                        <span>169</span>
+                    </li>
+                    <li><img src="https://openfile.meizu.com/group1/M00/07/CA/Cgbj0F6z76aADIfNAAS8Gxwx2NE353.png120x120.jpg" alt="">
+                        <p>魅族无线充电板</p>
+                        <span>169</span>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="goodsList4">
+                <ul>
+                    <li><img src="https://openfile.meizu.com/group1/M00/07/DF/Cgbj0V6z7uiAJMl5AA7x6BjMe3s567.png120x120.jpg" alt="">
+                        <p>lifeme双肩包</p>
+                        <span>299</span>
+                    </li>
+                    <li><img src="https://openfile.meizu.com/group1/M00/07/DF/Cgbj0V6z7uiAJMl5AA7x6BjMe3s567.png120x120.jpg" alt="">
+                        <p>lifeme双肩包</p>
+                        <span>299</span>
+                    </li>
+                    <li><img src="https://openfile.meizu.com/group1/M00/07/DF/Cgbj0V6z7uiAJMl5AA7x6BjMe3s567.png120x120.jpg" alt="">
+                        <p>lifeme双肩包</p>
+                        <span>299</span>
+                    </li>
+                    <li><img src="https://openfile.meizu.com/group1/M00/07/DF/Cgbj0V6z7uiAJMl5AA7x6BjMe3s567.png120x120.jpg" alt="">
+                        <p>lifeme双肩包</p>
+                        <span>299</span>
+                    </li>
+                    <li><img src="https://openfile.meizu.com/group1/M00/07/DF/Cgbj0V6z7uiAJMl5AA7x6BjMe3s567.png120x120.jpg" alt="">
+                        <p>lifeme双肩包</p>
+                        <span>299</span>
+                    </li>
+                    <li><img src="https://openfile.meizu.com/group1/M00/07/DF/Cgbj0V6z7uiAJMl5AA7x6BjMe3s567.png120x120.jpg" alt="">
+                        <p>lifeme双肩包</p>
+                        <span>299</span>
+                    </li>
+
+
+                </ul>
+            </div>
+            <div id="search">
+                <input idtype="text" placeholder="魅族17">
+            </div>
+            <div id="car1"><a href="#">购物车</a></div>
+            <div id="car2"><a href="#">注册</a></div>
+
+        </div>
+    </div>
+    <!-- 轮播图 -->
+    <div id="banner">
+
+        <ul>
+            <!-- <a href="#" class="bannerimages"><img src="https://fms.res.meizu.com/dms/2020/09/09/0a10ddbe-8ad3-4157-be67-d1619813d4bf.jpg" alt=""></a> -->
+
+        </ul>
+    </div>
+    <div id="moment">
+        <a href=""><img src="https://fms.res.meizu.com/dms/2020/09/17/4f762b30-ca9a-4f8b-936e-971465e46e4e.png" alt=""><em>2020魅族节</em>
+            <p>抢万元现金红包 | 千万红包雨每天2场</p>
+        </a>
+        <a href=""><img src="https://fms.res.meizu.com/dms/2020/09/18/4e9ba4b0-e4de-4dee-b0dd-b0fafa9228eb.png" alt=""><em>2020魅族节</em>
+            <p>抢万元现金红包 | 千万红包雨每天2场</p>
+        </a>
+        <a href=""><img src="https://fms.res.meizu.com/dms/2020/08/20/e32cc1ab-42ff-4510-86ae-1d1f855ab852.png" alt=""><em>2020魅族节</em>
+            <p>抢万元现金红包 | 千万红包雨每天2场</p>
+        </a>
+        <a href=""><img src="https://fms.res.meizu.com/dms/2020/06/11/13de22b5-2301-480f-99f9-778e4ff8644c.jpg" alt=""><em>2020魅族节</em>
+            <p>抢万元现金红包 | 千万红包雨每天2场</p>
+        </a>
+    </div>
+    <div id="phone">
+        <a href=""><img src="https://fms.res.meizu.com/dms/2020/09/21/88090aeb-3158-4fd5-a8d0-7a7a118e357c.jpg" alt=""></a>
+    </div>
+    <div id="meizu17">
+        <a href=""><img src="https://openfile.meizu.com/group1/M00/08/10/Cgbj0F8jhJmAHozqAAzMHSa2P9I796.png" alt=""><em>魅族 17「AG星际灰」</em>
+            <p>购机赠全新壳膜套装</p>
+            <span>￥3699</span>
+        </a>
+        <a href=""><img src="https://openfile.meizu.com/group1/M00/08/10/Cgbj0F8jhJmAHozqAAzMHSa2P9I796.png" alt=""><em>魅族 17「AG星际灰」</em>
+            <p>购机赠全新壳膜套装</p>
+            <span>￥3699</span>
+        </a>
+        <a href=""><img src="https://openfile.meizu.com/group1/M00/08/10/Cgbj0F8jhJmAHozqAAzMHSa2P9I796.png" alt=""><em>魅族 17「AG星际灰」</em>
+            <p>购机赠全新壳膜套装</p>
+            <span>￥3699</span>
+        </a>
+        <a href=""><img src="https://openfile.meizu.com/group1/M00/08/10/Cgbj0F8jhJmAHozqAAzMHSa2P9I796.png" alt=""><em>魅族 17「AG星际灰」</em>
+            <p>购机赠全新壳膜套装</p>
+            <span>￥3699</span>
+        </a>
+
+    </div>
+
+    <h2 id="meizumusic">魅族声学</h2>
+    <div class="hd60">
+        <a href=""><img src="https://fms.res.meizu.com/dms/2020/08/04/6d7e6b4e-1eba-4f10-bbb1-685490bfca64.jpg" alt=""></a>
+    </div>
+    <div class="good">
+        <ul>
+            <!-- 假数据 -->
+            <li class="goods_item">
+                <div class="goods_pic">
+                    <img src="https://openfile.meizu.com/group1/M00/07/4C/Cgbj0F1l4LyAR44oAAJKhE-uRA8619.png" alt="">
+                </div>
+                <div class="goods_title">
+                    <p>魅族 EP3C 耳机</p>
+                </div>
+                <div class="sc">
+                    <div id="0" class="sc_btn">加入购物车</div>
+                </div>
+            </li>
+            <li class="goods_item">
+                <div class="goods_pic">
+                    <img src="https://openfile.meizu.com/group1/M00/07/2F/Cgbj0Vy_C3GAN_TKAAExaPfTwFc180.png" alt="">
+                </div>
+                <div class="goods_title">
+                    <p>魅族 EP3C 耳机</p>
+                </div>
+                <div class="sc">
+                    <div id="0" class="sc_btn">加入购物车</div>
+                </div>
+            </li>
+            <li class="goods_item">
+                <div class="goods_pic">
+                    <img src="https://openfile.meizu.com/group1/M00/07/10/Cgbj0Fy9JYOACw2DAAMWf3vEhbA886.png" alt="">
+                </div>
+                <div class="goods_title">
+                    <p>魅族 EP3C 耳机</p>
+                </div>
+                <div class="sc">
+                    <div id="0" class="sc_btn">加入购物车</div>
+                </div>
+            </li>
+            <li class="goods_item">
+                <div class="goods_pic">
+                    <img src="https://openfile.meizu.com/group1/M00/07/86/Cgbj0V3UocyAR_tJAApbDmCAyEo620.png" alt="">
+                </div>
+                <div class="goods_title">
+                    <p>魅族 EP3C 耳机</p>
+                </div>
+                <div class="sc">
+                    <div id="0" class="sc_btn">加入购物车</div>
+                </div>
+            </li>
+        </ul>
+
+
+
+    </div>
+
+    <div class="seven">
+        <!-- <div class="side">
+            <h2>${arr[i].name}</h2>
+            <ul class="asideul">
+                <li>
+                    <a href="#">
+                        <div class="105img">
+                            <img src="${floorAllocations[k].img}" alt="" width="230" height="230">
+
+                        </div>
+                        <div class="font">
+                            <h3>手机</h3>
+                            <p>855手机手机手机手机手机手手机手机</p>
+                            <span>3999</span>
+                        </div>
+
+                    </a>
+                </li>
+
+
+            </ul>
+        </div> -->
+    </div>
+
+
+
+    <div id="footer">
+        <div class="top">
+            <a href="">
+                <img src="https://fms.res.meizu.com/dms/2018/07/13/2c69bf7c-2d29-4fd4-852e-0aa497f36f51.png" alt="">
+                <p>满88顺丰包邮</p>
+            </a>
+            <a href="">
+                <img src="https://fms.res.meizu.com/dms/2018/07/13/d28eac8b-b915-49dc-9dbd-80884a07d44f.png" alt="">
+                <p>100城市次日达</p>
+            </a>
+            <a href="">
+                <img src="https://fms.res.meizu.com/dms/2018/07/13/b21f3e65-f7f4-4693-914c-c070faf96770.png" alt="">
+                <p>七天无理由退货</p>
+            </a>
+            <a href="">
+                <img src="https://fms.res.meizu.com/dms/2018/07/13/1998f0da-a439-4e07-9736-e6a1c39fb0ae.png" alt="">
+                <p>15天退货保障</p>
+            </a>
+            <a href="">
+                <img src="https://fms.res.meizu.com/dms/2018/07/13/420825c1-4763-436d-b3e1-721651ccc70c.png" alt="">
+                <p>一年免费保修</p>
+            </a>
+            <a href="">
+                <img src="https://fms.res.meizu.com/dms/2018/07/13/1c5cfeff-1b35-499e-bc2a-1fd29305be69.png" alt="">
+                <p>上门快修</p>
+            </a>
+
+            <div id="left">
+                <p> 周一至周日 8:00-20:00</p>
+                <span>400-788-3333</span>
+                <div>在线客服</div>
+
+
+
+            </div>
+        </div>
+        <!-- 
+
+
+
+
+
+
+
+
+
+©2020 Meizu Telecom Equipment Co., Ltd. All rights reserved.    粤ICP备13003602号合字B2-20170010 营业执照法律声明粤公网安备 44049102496009 号
+ -->
+        <div class="bottom">
+            <ul class="one">
+                <a href="">
+                    <li>了解魅族</li>
+                </a>
+                <a href="">
+                    <li>加入我们</li>
+                </a>
+                <a href="">
+                    <li>联系我们</li>
+                </a>
+                <a href="">
+                    <li>Flyme</li>
+                </a>
+                <a href="">
+                    <li>魅族社区</li>
+                </a>
+                <a href="">
+                    <li>天猫旗舰店</li>
+                </a>
+                <a href="">
+                    <li>问题反馈</li>
+                </a>
+                <a href="">
+                    <li>线上销售授权名单公示</li>
+                </a>
+                <a href="">
+                    <li>出版物经营许可证</li>
+                </a>
+                <a href="">
+                    <li>简体中文</li>
+                </a>
+            </ul>
+            <ul class="left">
+                <a href="">
+                    <li>2020 Meizu Telecom Equipment Co., Ltd. All rights reserved</li>
+                </a>
+                <a href="">
+                    <li>粤ICP备13003602号合字B2-20170010 营业执照法律声明</li>
+                </a>
+                <a href="">
+                    <li>粤公网安备 44049102496009 号</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

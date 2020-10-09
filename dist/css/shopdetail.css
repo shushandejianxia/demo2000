@@ -1,0 +1,367 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+dl,
+li,
+dt,
+dd,
+p,
+form,
+input,
+textarea,
+select,
+tr,
+td,
+th,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 16px; }
+
+ul,
+ol {
+  list-style: none; }
+
+a,
+u {
+  text-decoration: none; }
+
+b,
+strong {
+  font-weight: normal; }
+
+i,
+em {
+  font-style: normal; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 16px; }
+
+img {
+  border: 0;
+  vertical-align: middle; }
+
+input,
+textarea,
+fieldset {
+  border: none;
+  outline: none; }
+
+.clearfn:after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden; }
+
+.clearfn {
+  zoom: 1; }
+
+#meizuguanwang {
+  margin: 0;
+  position: relative;
+  list-style: none;
+  padding: 0;
+  z-index: 1; }
+
+#header-link {
+  height: 65px;
+  width: 100%;
+  list-style: none;
+  position: relative;
+  top: 0; }
+
+#header-link-logo {
+  float: left;
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-right: 60px; }
+
+#header-link-logo img {
+  width: 120px;
+  height: 20px; }
+
+#header-link ul a {
+  padding-left: 45px;
+  float: left;
+  list-style: none;
+  font-size: 12px; }
+
+#header-link #search {
+  float: left;
+  padding-left: 50px; }
+
+#header-link #car1 {
+  float: left;
+  padding-left: 20px; }
+
+#header-link #header-link-nav {
+  padding-top: 30px;
+  position: relative; }
+
+.goodsList3 {
+  display: flex;
+  width: 1000px;
+  justify-content: space-around; }
+
+.goodsList4 {
+  display: flex;
+  width: 1000px;
+  justify-content: space-around; }
+
+.goodsList,
+.goodsList2,
+.goodsList3,
+.goodsList4 {
+  position: absolute;
+  display: none;
+  top: 65px;
+  right: 0px; }
+  .goodsList li,
+  .goodsList2 li,
+  .goodsList3 li,
+  .goodsList4 li {
+    background-color: #ffffff;
+    float: left; }
+
+#header-link #car2 {
+  float: left;
+  padding-left: 20px; }
+
+#banner ul a img {
+  border: 0; }
+
+.indexs {
+  background-color: #F6F8FB;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  line-height: 70px; }
+  .indexs span {
+    font-size: 25px;
+    font-weight: 900; }
+  .indexs p {
+    font-size: 15px; }
+
+main {
+  display: flex; }
+  main .mainright {
+    width: 80%; }
+    main .mainright .one {
+      height: 560px;
+      width: 560px; }
+      main .mainright .one img {
+        height: 560px;
+        width: 560px; }
+    main .mainright .fs {
+      position: absolute;
+      left: 50px; }
+  main .mainleft {
+    display: flex;
+    flex-direction: column; }
+  main .title p {
+    font-size: 25px;
+    font-weight: 900;
+    padding-top: 30px; }
+  main .title span {
+    font-size: 14px;
+    color: red; }
+  main .money .one {
+    background-color: #F2EAEF;
+    height: 98px; }
+    main .money .one .pan {
+      font-size: 30px;
+      color: red;
+      padding: 10px; }
+    main .money .one .pan2 {
+      padding: 10px 0;
+      display: flex; }
+      main .money .one .pan2 span {
+        padding: 0 5px;
+        font-size: 14px; }
+      main .money .one .pan2 span:nth-child(1) {
+        color: red;
+        background-color: #F2EAEF; }
+      main .money .one .pan2 span:nth-child(3) {
+        color: blue; }
+  main .money .two,
+  main .money .three {
+    font-size: 14px;
+    color: #999999; }
+  main .three span {
+    padding: 8px 0; }
+  main .three secect {
+    padding: 8px 0; }
+  main .three p {
+    padding: 8px 0; }
+  main .phonedata aside:nth-child(1) {
+    display: flex;
+    padding-top: 22px; }
+    main .phonedata aside:nth-child(1) p {
+      font-size: 14px;
+      color: #999999;
+      padding: 0 20px;
+      height: 45px;
+      line-height: 45px; }
+    main .phonedata aside:nth-child(1) div {
+      border: 1px solid black;
+      padding: 15px 53px;
+      margin-left: 12px; }
+  main .phonedata aside:nth-child(2) {
+    display: flex;
+    padding-top: 22px; }
+    main .phonedata aside:nth-child(2) p {
+      font-size: 14px;
+      color: #999999;
+      padding: 0 20px;
+      height: 45px;
+      line-height: 45px; }
+    main .phonedata aside:nth-child(2) div {
+      border: 1px solid red;
+      padding: 15px 68px;
+      margin-left: 12px; }
+  main .phonedata aside:nth-child(3) {
+    display: flex; }
+    main .phonedata aside:nth-child(3) p {
+      font-size: 12px;
+      color: #999999;
+      padding: 0 20px;
+      height: 60px;
+      line-height: 80px; }
+    main .phonedata aside:nth-child(3) div {
+      display: flex;
+      border: 1px solid black;
+      padding: 8px 30px;
+      margin-left: 15px;
+      margin-top: 20px;
+      font-size: 12px;
+      line-height: 15px; }
+    main .phonedata aside:nth-child(3) img {
+      width: 32px;
+      height: 32px; }
+  main .phonedata aside:nth-child(4) {
+    display: flex; }
+    main .phonedata aside:nth-child(4) p {
+      font-size: 12px;
+      color: #999999;
+      padding: 0 20px;
+      height: 60px;
+      line-height: 80px; }
+    main .phonedata aside:nth-child(4) div {
+      font-size: 16px;
+      display: flex;
+      border: 1px solid black;
+      padding: 5px 30px;
+      margin-left: 20px;
+      margin-top: 20px;
+      height: 30px;
+      line-height: 30px; }
+  main .phonedata aside:nth-child(5) {
+    display: flex; }
+    main .phonedata aside:nth-child(5) p {
+      font-size: 12px;
+      color: #999999;
+      padding: 0 20px;
+      height: 60px;
+      line-height: 80px; }
+    main .phonedata aside:nth-child(5) div {
+      font-size: 16px;
+      display: flex;
+      border: 1px solid black;
+      padding: 5px 30px;
+      margin-left: 20px;
+      margin-top: 20px;
+      height: 30px;
+      line-height: 30px; }
+  main .phonedata aside:nth-child(6) {
+    display: flex; }
+    main .phonedata aside:nth-child(6) p {
+      font-size: 12px;
+      color: #999999;
+      padding: 0 20px;
+      height: 60px;
+      line-height: 80px; }
+    main .phonedata aside:nth-child(6) div {
+      font-size: 16px;
+      display: flex;
+      border: 1px solid black;
+      padding: 5px 30px;
+      margin-left: 20px;
+      margin-top: 20px;
+      height: 30px;
+      line-height: 30px; }
+      main .phonedata aside:nth-child(6) div span {
+        font-size: 12px; }
+  main .phonedata aside:nth-child(7) {
+    display: flex; }
+    main .phonedata aside:nth-child(7) p {
+      font-size: 12px;
+      color: #999999;
+      padding: 0 20px;
+      height: 60px;
+      line-height: 80px; }
+    main .phonedata aside:nth-child(7) div {
+      padding: 20px 50px; }
+  main .nowshop {
+    display: flex; }
+    main .nowshop aside {
+      border: 1px solid black;
+      padding: 20px 69px;
+      font-size: 20px;
+      margin-left: 20px; }
+    main .nowshop aside:nth-child(1) {
+      background-color: #23A0E5;
+      margin-left: 20px;
+      color: cornsilk; }
+    main .nowshop aside:nth-child(2) {
+      color: #23A0E5;
+      border: 1px solid #23A0E5; }
+  main #small {
+    width: 500px;
+    height: 729px;
+    border: 1px solid black;
+    position: absolute;
+    left: 50px;
+    top: 250px; }
+  main #small img {
+    width: 100%;
+    height: 100%; }
+  main #mark {
+    display: none;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    opacity: 0.5;
+    filter: opacity=50;
+    position: absolute;
+    left: 0px;
+    top: -200px; }
+  main #big {
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    position: absolute;
+    left: 700px;
+    top: 250px;
+    display: none;
+    overflow: hidden; }
+  main #big img {
+    position: absolute;
+    width: 1000px;
+    height: 1458px; }

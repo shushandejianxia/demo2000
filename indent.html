@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/indent.css" />
+    <script src='./js/require.js' defer async='true' data-main='./js/main.js'></script>
+
+</head>
+
+<body>
+    <div class="nav">
+        <aside class="condition">
+            <div class="right">
+                <div class="img">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAAAuCAYAAAABQwQEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQwIDc5LjE2MDQ1MSwgMjAxNy8wNS8wNi0wMTowODoyMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTggKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6Q0FCMzYyNjc5MTE4MTFFQTkyOTE5MDU4QTAwMjNCOTEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6Q0FCMzYyNjg5MTE4MTFFQTkyOTE5MDU4QTAwMjNCOTEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoxRDVBNDg5NDkxMEIxMUVBOTI5MTkwNThBMDAyM0I5MSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDQUIzNjI2NjkxMTgxMUVBOTI5MTkwNThBMDAyM0I5MSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pg9i2hkAAAX9SURBVHja7J17iJVFGMbfU2ZYqZV0OX8Y1SqEhd2IlsqysvtFitJAE/qjohLNLCqKagmycFez+x8ZhUVtRUGhldmVTLoRCFZYkraUZJlamqyrnt7HmV0WPJ2Z2f0833xznh88sLAz53zzzvec+b65lqS1IlUYqrpGNV41SlVWDZRisUX1m+ob1ZtWXRl/x3E2TheojlAdoipFFIM5qpmeadfZ66/FENU/jjQD9kCcs+Zv1Xeqp1UvqXY40g9T/elI06q6o94FqWjtltrkOf3zOlel9AY36VTV/bZwRWZ/1UgrmPFH1QzVwgw++1BVm2pSZMaWKvVJqv9gNVtdauuxK+UC79Xr70GqdtVjCZi8GjD826r7+vk5o1VfqSbTSElwtWq6q+FMyegv2EKnDIzZorq9j/mHq963j+kkHW5LvYDdRp/aACbvzSP2sS30R+JV+9hO0qKcer3C6Oh4e6DBKhblnt2HR7xmeiJZtjp+5At/w09M9J3cxRn2fduXW+iFZFkltUcTknhHH9/AFXy5Z7qDVafTD8kyJ/UCYnhtlEe638V0WHyk2tyP73tCNcWR5kbVy/34DrxrTbCvI66x/2M9P/MY1d6ONBtVd6reVW2IpH635fCd28UMX+VBydb7jIA8mGcx3+NzC2/0siMNxhfPVy2v0423VdyTMmqBvLNUf6mecaQte36mTzq8wy9h49hTB3k8naIhuSkgz2rVJarO1CsEwdnXkebTjExeb+ZL7Q4W8Si7b7pVNHmuoH7aA03+k+oc+7TqIqlx9Fo3cRHBI+SaOn3XanotNwarFqmuCsjzrZg+l58bJUg+Ri/yr1mFPkiaw1Sf2JbZl49VY8XM7RcanZC4OVq1VHViQB4sbLpQzKIWodEJiZsTrMmbAvI8K6bDtLMRA0ajk6Ix1j6uHx6Q52HV9eJejkqjExIBV4qZp+A7To8+Goyp393ogRvAe4cUBEykeiqgccKoCzZjeJGho9GzjOOQyK4ppQ4n7CHQEpD+X/s+voi3Jo2eJWepNkV2TZifv6HgcUXr/bjq5oA8KDNmuy3jbUmjk/gZaB+7Q/ZJ+FXM/n0rGD4ancQPZrthzPvcgDwrxazJWMPw0egkfrD68B3VSQF5vlZdrPqD4fv/dyBCYuEoMRNhQkz+gepsmpxGJ8XgeNXnqhEBeV6zLflmho9GJ/GDUYvQ2W7YawD79W9j+Gh0Ej9XiJntNjQgz4Ni1p7vZPj8YGdcNmCLrYsiu6YiLN64QcyxSL4NDqa0ThOzkwyh0evOTmnQVVH94F7bMvuCLc2w3+ArDB2NTorxujhPzKEhvuDATCxoWczw0egkfjDbbYGYXXp9WS+mZ/1Lho9GJ/GD2W5vqMYF5OkQM9vtB4aPRifxg3PXMdvt5IA834uZt97B8GXzvkTInqR7tluIyb9QjaHJaXRSDEZbk48MyPOemMUs6yMqRymjNLldH42eDUcyBLtxppjDP8oBeXAU12Vietljwmfb8KYcr6+JRs+GTo9Aj2OYejjVvpOHzHbDBhOTxIyXF63+xfYnjKj3hZXadr0Snea6fnbG+bHWIw0WWNxlb/CNEd2g9Z7Ig6ebhar9AvI8KmbyzEE5xWmLI074P86TG1wjzSDVh2I2o/xM3MeB9ZcDbOPSKu4DQNfS6H5geGeHI6AHivtQx3ozV8wpuPUE+7sNC8xzq1VeTLNPFLXArjXNjjTDVa9HeP+u4KO7HziZdSnD4NXKTE60bG8V+dppdH+eZAicYChtn0TL9ryY3WWLBkYv2ml0f/AOzp1Fa9OVcNnQTzO7gNfdUpkpm2h0fzDEMlEa7BTOQFba15xUQYfhkgJdL/oLdi3ppdHDwEyt81S/MBRVwXLdWQmXDx2yOId9cUFMPkVb8wqN3jeWq04Rs+c4z1/fnbmS9jFIOKgDq+nuETPkFht4osIIxgQ1ec8QH43eN/D4fq2YKZ4PidlueF2Exs/jetDqYYMITH5ZFqkZsigj6h0TpaaL2Ym2I6c+CuyZh73ssR0XttdqUoPP627Ju/lPgAEAC9EMcOrP93sAAAAASUVORK5CYII="
+                        alt="">
+                </div>
+                <div class="span">
+                    <span>购物车&nbsp;&nbsp;&nbsp;></span>
+                    <span class="q">&nbsp;&nbsp;确认订单&nbsp;&nbsp;></span>
+                    <span>&nbsp;在线支付&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;完成</span>
+                </div>
+            </div>
+            <div class="left">
+                <aside>我的订单</aside>
+                <aside class="taobao">
+                    <div>我的商城</div>
+                    <div>地址管理</div>
+                    <div>我的收藏</div>
+                    <div>我的回购金</div>
+                    <div>问题反馈</div>
+                </aside>
+
+            </div>
+
+        </aside>
+        <div>
+            <main>
+                <div class="address">
+                    <span>收货人信息</span>
+
+                </div>
+                <div class="parameter">
+                    <h2>确认订单信息</h2>
+                    <aside class="one">
+                        <div>
+                            供应商： 魅族
+                        </div>
+                        <div>
+                            <span>单价</span>
+                            <span>数量</span>
+                            <span>小计</span>
+                            <span>配送方式</span>
+                        </div>
+
+                    </aside>
+                    <aside class="two">
+                        <div>
+                            <img src="https://openfile.meizu.com/group1/M00/07/D9/Cgbj0V6zwMWANhNKAAVfQwmOan4751.png120x120.jpg" alt="">
+                        </div>
+                        <div class="fit">
+                            <span>魅族17</span>
+                            <p>全网通公开版 AG梦幻独角兽 8+128GB</p>
+                        </div>
+                        <div class="money">
+                            <div>￥3699.00</div>
+                            <div>1</div>
+                            <div>3699.00</div>
+                            <div><span>
+                        快递配送： 运费
+                    </span>
+                                <p>￥0.00</p>
+                            </div>
+                        </div>
+                    </aside>
+                    <aside class="two">
+                        <div>
+                            <img src="https://openfile.meizu.com/group1/M00/07/D9/Cgbj0V6zwMWANhNKAAVfQwmOan4751.png120x120.jpg" alt="">
+                        </div>
+                        <div class="fit">
+                            <span>魅族17</span>
+                            <p>全网通公开版 AG梦幻独角兽 8+128GB</p>
+                        </div>
+                        <div class="money">
+                            <div>￥3699.00</div>
+                            <div>1</div>
+                            <div>3699.00</div>
+                            <div><span>
+                        快递配送： 运费
+                    </span>
+                                <p>￥0.00</p>
+                            </div>
+                        </div>
+                    </aside>
+                    <aside class="three">
+                        <div>
+                            <span>
+                        发票类型：电子发票</span>
+                            <p>发票抬头：默认为收货人姓名</p>
+                        </div>
+                        <div>
+                            <span>
+                            合计
+                        </span>
+                            <p>
+                                ￥3699
+                            </p>
+                        </div>
+                    </aside>
+                    <aside class="remark">
+                        备注:
+                    </aside>
+
+                </div>
+                <h2 class="privilege">使用优惠折扣</h2>
+                <div class="buy-back">
+                    <aside class="use">使用回购金</aside>
+                    <div class="balance">
+                        <aside class="cup">
+                            <span> 我的回购金余额： </span>
+                            <span>￥0.00</span>
+                            <span>（使用说明：系统会根据您选购的商品自动计算出最大可以用回购金数量，以及可享受的魅族商城补贴，该补贴不可退</span>
+                        </aside>
+                        <aside class="car">
+                            <input type="checkbox">可使用￥0.00元回购金
+                            <p><input type="checkbox">暂不使用回购金
+                                <p>
+                        </aside>
+                    </div>
+                    <aside class="pressage">+使用礼品卡</aside>
+                </div>
+                <h2>
+                    选择支付方式
+
+                </h2>
+                <div class="pay">
+                    <aside class="speed">
+                        <span>快捷支付</span>
+                        <img src="https://gw.alipayobjects.com/mdn/member_frontWeb/afts/img/A*h7o9Q4g2KiUAAAAAAAAAAABkARQnAQ" alt="">
+                        <span>更多支付方式></span>
+                    </aside>
+                    <aside class="sp">
+                        <div class="one">
+                            <div>￥1361.36 x 3期</div>
+                            <div>
+                                含手续费 ￥28.36/期
+                            </div>
+                        </div>
+                        <div class="one">
+                            <div>￥661.36 x 6期</div>
+                            <div>
+                                含手续费 ￥28.36/期
+                            </div>
+                        </div>
+                        <div class="one">
+                            <div>￥361.36 x 12期</div>
+                            <div>
+                                含手续费 ￥28.36/期
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+                <div class="huangzhang">
+                    <div class="haha">
+                        <aside>
+                            <span>
+                                总金额：
+                                </span>
+                            <span>
+                                    ￥3699.00
+                                </span>
+                        </aside>
+                        <aside>
+                            <span>
+                                运费 
+                            </span>
+                            <span> ￥0.00</span>
+                        </aside>
+                        <aside>
+                            <span>
+                                应付  
+                            </span>
+                            <span>
+                                3699.00
+                            </span>
+                        </aside>
+
+                        <div class="ping">
+                            <aside>
+                                下单并支付
+                            </aside>
+                        </div>
+                        <div class="ding">该订单含付款减库存商品，支付完成后才会为您预留库存！</div>
+
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <!-- <div><img src="./images/627.png" alt=""></div> -->
+</body>
+
+</html>
